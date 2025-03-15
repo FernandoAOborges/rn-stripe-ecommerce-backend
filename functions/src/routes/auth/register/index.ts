@@ -1,5 +1,5 @@
-import { error, admin, FieldValue, logger, HttpsError } from '../../../config'
-import { USER_ROLES, USERS_COLLECTION } from '../../../constants'
+import { error, admin, logger, HttpsError } from '../../../config'
+import { USER_ROLES } from '../../../constants'
 import type { TRequestProps, TResponseProps, TUserType } from './types'
 import { EErrorsRegisterProps } from './types'
 import { validateRegistration } from './validators'
@@ -21,11 +21,6 @@ const registerUser = async (
 
     await admin.auth().setCustomUserClaims(user.uid, {
       role: USER_ROLES.USER,
-    })
-
-    await admin.firestore().collection(USERS_COLLECTION).doc(user.uid).set({
-      email: user.email,
-      created_at: FieldValue.serverTimestamp(),
     })
 
     return { uid: user.uid, email: user.email }
