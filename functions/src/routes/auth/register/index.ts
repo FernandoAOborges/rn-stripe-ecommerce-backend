@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 import { error, admin, FieldValue, logger, HttpsError } from '../../../config'
 import { USER_ROLES, USERS_COLLECTION } from '../../../constants'
 import type { TRequestProps, TResponseProps, TUserType } from './types'
