@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Firebase Functions",
+            "type": "shell",
+            "command": "cd functions && npm run dev",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Deploy Firebase Functions",
+            "type": "shell",
+            "command": "cd functions && npm run deploy",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "Export Firebase Functions",
+            "type": "shell",
+            "command": "cd functions && npm run export",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}

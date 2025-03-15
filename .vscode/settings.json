@@ -1,0 +1,15 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "explorer.compactFolders": false,
+  "editor.formatOnSave": true,
+  "editor.rulers": [140],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  "editor.renderLineHighlight": "gutter",
+  "eslint.validate": ["typescript"],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "cSpell.words": ["firestore"]
+}

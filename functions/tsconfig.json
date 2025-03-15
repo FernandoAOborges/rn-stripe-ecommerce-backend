@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2017",
+    "skipLibCheck": true,
+    "rootDir": "src"
+  },
+  "compileOnSave": true,
+  "include": ["src"],
+  "exclude": [
+    "node_modules",
+    "functions/src/config/serviceAccountKey.json",
+    "lib/"
+  ]
+}
